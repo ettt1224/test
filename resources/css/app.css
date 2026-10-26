@@ -1,0 +1,88 @@
+/* Sneat 風格主題：紫色主色、淺灰底、白色卡片 */
+:root {
+  --app-bg: #f5f5f9;
+  --app-text: #697a8d;
+  --app-heading: #566a7f;
+  --app-shadow: 0 2px 6px 0 rgba(67, 89, 113, 0.12);
+
+  --el-color-primary: #696cff;
+  --el-color-primary-light-3: #9698ff;
+  --el-color-primary-light-5: #b4b5ff;
+  --el-color-primary-light-7: #d2d3ff;
+  --el-color-primary-light-8: #e1e2ff;
+  --el-color-primary-light-9: #f0f0ff;
+  --el-color-primary-dark-2: #5f61e6;
+  --el-color-success: #71dd37;
+  --el-color-warning: #ffab00;
+  --el-color-danger: #ff3e1d;
+  --el-color-info: #8592a3;
+  --el-text-color-primary: var(--app-heading);
+  --el-text-color-regular: var(--app-text);
+  --el-border-radius-base: 6px;
+  --el-font-family: 'Public Sans', 'Noto Sans TC', 'Microsoft JhengHei', system-ui, sans-serif;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  height: 100%;
+  font-family: var(--el-font-family);
+  color: var(--app-text);
+  background: var(--app-bg);
+}
+
+.page-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.page-toolbar .spacer {
+  flex: 1;
+}
+
+.pager {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- Element Plus 元件微調 ---- */
+.el-card {
+  --el-card-border-radius: 8px;
+  border: none !important;
+  box-shadow: var(--app-shadow) !important;
+}
+.el-card__header {
+  border-bottom: none;
+  color: var(--app-heading);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.el-table {
+  --el-table-header-bg-color: #f9fafb;
+  --el-table-header-text-color: var(--app-heading);
+  --el-table-row-hover-bg-color: #f7f7ff;
+  --el-table-border-color: #eceef1;
+}
+.el-table th.el-table__cell {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.el-button--primary {
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(105, 108, 255, 0.4);
+}
+
+.el-tag {
+  border: none;
+}
